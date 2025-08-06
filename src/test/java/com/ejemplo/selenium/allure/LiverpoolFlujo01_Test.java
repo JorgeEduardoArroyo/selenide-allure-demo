@@ -26,6 +26,8 @@ class LiverpoolFlujo01_Test {
 			open("https://www.liverpool.com.mx/tienda/home");
 			sleep(2000);
 			
+			System.out.println("prueba impresion 01");
+			
 	        $("#mainSearchbar").shouldBe(Condition.visible);
 	        $("#mainSearchbar").click();
 	        sleep(2000);
