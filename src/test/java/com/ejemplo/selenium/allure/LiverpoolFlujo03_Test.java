@@ -5,6 +5,11 @@ import org.junit.jupiter.api.BeforeAll;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
+
 import static com.codeborne.selenide.Selenide.*;
 
 class LiverpoolFlujo03_Test {
@@ -16,7 +21,10 @@ class LiverpoolFlujo03_Test {
 	        Configuration.headless = false;
 	    }
 
-		@Test
+	    @Test
+	    @Severity(SeverityLevel.CRITICAL)
+	    @Description("Verifica el test 03 exitoso")
+	    @Story("Test03")
 		void test() {
 			
 			/*

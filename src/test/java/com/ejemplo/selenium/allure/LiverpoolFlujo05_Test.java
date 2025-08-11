@@ -13,6 +13,10 @@ import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import com.ejemplo.selenium.allure.utils.locatorReader.LocatorReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 
 class LiverpoolFlujo05_Test {
 
@@ -24,7 +28,10 @@ class LiverpoolFlujo05_Test {
 
 	    }
 
-		@Test
+	    @Test
+	    @Severity(SeverityLevel.CRITICAL)
+	    @Description("Verifica el test 05 exitoso")
+	    @Story("Test05")
 		void test() {
 			
 			LocatorReader locatorReader = new LocatorReader("locators.properties");

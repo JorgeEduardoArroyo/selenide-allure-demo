@@ -7,6 +7,11 @@ import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
+
 import static com.codeborne.selenide.Selenide.*;
 
 class LiverpoolFlujo04_Test {
@@ -19,7 +24,10 @@ class LiverpoolFlujo04_Test {
 
 	    }
 
-		@Test
+	    @Test
+	    @Severity(SeverityLevel.CRITICAL)
+	    @Description("Verifica el test 04 exitoso")
+	    @Story("Test04")
 		void test() {
 			
 			open("https://www.liverpool.com.mx/tienda/home");

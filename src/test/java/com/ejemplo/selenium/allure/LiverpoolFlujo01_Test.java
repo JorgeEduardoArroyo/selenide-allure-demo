@@ -19,8 +19,8 @@ class LiverpoolFlujo01_Test {
 
 	    @Test
 	    @Severity(SeverityLevel.CRITICAL)
-	    @Description("Verifica el test exitoso")
-	    @Story("Test")
+	    @Description("Verifica el test 01 exitoso")
+	    @Story("Test01")
 		void test() {
 
 			open("https://www.liverpool.com.mx/tienda/home");
